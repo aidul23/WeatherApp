@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.aidul23.weatherapp.HomeFragment"
-        android:label="Wather App"
+        android:label="Weather App"
         tools:layout="@layout/home_fragment">
         <action
             android:id="@+id/action_homeFragment_to_mapsFragment"

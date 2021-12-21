@@ -43,7 +43,7 @@ class WeatherAdapter(private val weatherList: List<WeatherData>, private val lis
         }
 
         override fun onClick(p0: View?) {
-                listener.onItemClick(weatherList)
+                listener.onItemClick(adapterPosition,weatherList)
         }
 
         fun celsius(temp: Double) : String{
@@ -53,7 +53,7 @@ class WeatherAdapter(private val weatherList: List<WeatherData>, private val lis
     }
 
     interface OnItemClickListener {
-        fun onItemClick(weatherList: List<WeatherData> )
+        fun onItemClick(position: Int,weatherList: List<WeatherData> )
     }
 }
 

@@ -14,7 +14,7 @@ class WeatherRepository(private val weatherApi: WeatherApi) {
         get() = weatherLiveData
 
     suspend fun getWeather() {
-        val results = weatherApi.getWeather("23.68", "90.35", "092b9216affc0f10dd37ad0ff025f121")
+        val results = weatherApi.getWeather("23.68", "90.35","50", "092b9216affc0f10dd37ad0ff025f121")
         if (results.body() != null) {
             weatherLiveData.postValue(results.body())
         }

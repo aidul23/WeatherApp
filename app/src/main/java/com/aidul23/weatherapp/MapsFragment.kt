@@ -55,7 +55,7 @@ class MapsFragment : Fragment() {
 
         _binding!!.cityName.text = args.weatherData.name
         _binding!!.weatherCondition.text = args.weatherData.weather[0].main
-        _binding!!.humidity.text = "Humidity: "+args.weatherData.main.humidity.toString()
+        _binding!!.humidity.text = "Humidity: "+args.weatherData.main.humidity.toString()+"%"
         _binding!!.windSpeed.text = "Wind Speed: "+args.weatherData.wind.speed
         _binding!!.maxTemp.text ="Max. Temp: "+celsius(args.weatherData.main.temp_max)
         _binding!!.minTemp.text = "Min. Temp: "+celsius(args.weatherData.main.temp_min)
